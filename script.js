@@ -1,3 +1,4 @@
+/*variables*/
 const squares = document.querySelectorAll('.tdr');
 let playerTurn = document.getElementById('playerturn');
 const resetButton = document.getElementById('resetButton');
@@ -18,6 +19,7 @@ const winningCombos = [
     [3,6,9],
 ]
 
+/* this code adds even listeners for each square at a class level */
 squares.forEach((square) => {
     square.addEventListener('click', (event) =>{
         const index = event.target.dataset.index;
